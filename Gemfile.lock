@@ -1,0 +1,70 @@
+PATH
+  remote: .
+  specs:
+    rodauth-guest (0.0.1)
+      rodauth (~> 2.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
+    bcrypt (3.1.18)
+    capybara (3.37.1)
+      addressable
+      matrix
+      mini_mime (>= 0.1.3)
+      nokogiri (~> 1.8)
+      rack (>= 1.6.0)
+      rack-test (>= 0.6.3)
+      regexp_parser (>= 1.5, < 3.0)
+      xpath (~> 3.2)
+    mail (2.7.1)
+      mini_mime (>= 0.1.1)
+    matrix (0.4.2)
+    mini_mime (1.1.2)
+    minitest (5.16.3)
+    minitest-hooks (1.5.0)
+      minitest (> 5.3)
+    net-protocol (0.1.3)
+      timeout
+    net-smtp (0.3.2)
+      net-protocol
+    nokogiri (1.13.8-arm64-darwin)
+      racc (~> 1.4)
+    public_suffix (5.0.0)
+    racc (1.6.0)
+    rack (3.0.0)
+    rack-test (2.0.2)
+      rack (>= 1.3)
+    rake (13.0.6)
+    regexp_parser (2.6.0)
+    roda (3.60.0)
+      rack
+    rodauth (2.25.0)
+      roda (>= 2.6.0)
+      sequel (>= 4)
+    sequel (5.61.0)
+    sqlite3 (1.5.2-arm64-darwin)
+    tilt (2.0.11)
+    timeout (0.3.0)
+    xpath (3.2.0)
+      nokogiri (~> 1.8)
+
+PLATFORMS
+  arm64-darwin-21
+
+DEPENDENCIES
+  bcrypt
+  capybara
+  mail
+  minitest
+  minitest-hooks
+  net-smtp
+  rake (~> 13.0)
+  rodauth-guest!
+  sqlite3
+  tilt
+
+BUNDLED WITH
+   2.3.18
