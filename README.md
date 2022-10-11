@@ -111,4 +111,9 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 Everyone interacting in the Rodauth::Guest project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/janko/rodauth-guest/blob/main/CODE_OF_CONDUCT.md).
 
+## Thanks
+
+This gem was inspired by [devise-guests].
+
 [Rodauth]: https://github.com/jeremyevans/rodauth
+[devise-guests]: https://github.com/cbeer/devise-guests
