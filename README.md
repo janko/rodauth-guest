@@ -27,12 +27,14 @@ route do |r|
   r.rodauth # route rodauth requests
 
   if r.path.start_with?("/dashboard")
-    rodauth.allow_guest
+    rodauth.allow_guest # automatically creates a guest account
   end
 end
 ```
 
-The guest account will be logged in the same way normal accounts are, so `logged_in?` & `authenticated?` will return `true`, and `session_value` will return the guest account ID. You can check whether a guest account is logged in:
+The guest account will be logged in the same way normal accounts are, so `logged_in?` & `authenticated?` will return `true`, and `session_value` will return the guest account ID.
+
+If you want to check whether the logged in account is a guest account:
 
 ```rb
 if rodauth.guest_logged_in?
